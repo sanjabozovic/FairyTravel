@@ -1,0 +1,314 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.cleaner{
+	clear: both;
+}
+
+body{
+	background-color: black;
+}
+
+/* header */
+
+header{
+	opacity: 0.9;
+	background-color: black;
+	height: 6vw;
+	width: 100%;
+}
+
+#logo{
+	float: left;
+}
+
+#meni{
+	float: right;
+	margin-top: 1vw;
+	display: flex;
+	width: 30%;
+	justify-content: space-between;
+	margin-right: 1vw;
+}
+
+.link{
+	background-color: #3792cb;
+	background-color: #3792cb;
+	color: black;
+	padding: 1vw;
+	font-size: 1.3vw;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.dropbtn {
+  background-color: #3792cb;
+  color: black;
+  padding: 1vw;
+  font-size: 1.3vw;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus, .link:hover {
+  background-color: #45b6fe;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #45b6fe;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 0px 16px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #3792cb
+}
+
+.show {
+	display:block;
+}
+
+/*Slider*/
+
+#slider {
+    height: 39vw;
+    width: 100%;
+    background-image: url(../../images/slider.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+@keyframes sliderTextFade{
+	0% { bottom:0%; opacity:0.0;}
+	100%{bottom: 10%; opacity:1.0;}
+}
+
+#sliderText{
+	width:50%;
+	padding: 5vw 0vw 1vw 0.7vw;
+	overflow: hidden;
+    animation: sliderTextFade;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+	font-size: 2vw;
+}
+
+/* Prvi tekst, podeljen u tri kolone */
+
+#firstSec{
+	width: 100%;
+	height: 25vw;
+	display: flex;
+	justify-content: space-around;
+}
+
+.first{
+	max-width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.first h1{
+	color: #45b6fe;
+	font-size: 3vw;
+}
+
+.first p{
+	color: #45b6fe;
+	font-size: 1.5vw;
+}
+
+.section {
+  width: 100%;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.hideSec {
+  opacity: 0;
+  left: -100%;
+}
+
+.showSec {
+  opacity: 1;
+  left: 0;
+}
+
+/* Citat */
+
+#quote {
+	width: 100%;
+	height: 25vw;
+	background-image: url(../../images/banner.jpg);	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+#quote p{
+	font-size: 2vw;
+	color: black;
+	background-color: rgba(250,250,250,0.5);
+	height: 5vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	
+}
+
+/* forma */
+
+#form {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#cont{
+	padding: 2vw;
+	color: #45b6fe;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.title{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+#submitForm {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.formHolder{
+	width:80%;
+ 	margin: 1%;
+ 	text-align: center;
+
+   }
+
+.txtforme{
+ width:100%;
+ margin-bottom:5px;
+ border:1px solid blue;
+ border-radius:5px;
+ padding:5px;
+ text-align: center;
+}
+
+.accept{
+	width:40%;
+	font-size:20px;
+	color:#000;
+	background-color:#3792cb; 
+	padding:0px 5%;
+ 	border:none;
+	 margin-right: 10px;
+	 border-radius: 5px;
+	cursor: pointer;
+ }
+
+ .border{
+	border:1px solid #ff0000;
+   
+	}
+
+/*footer*/
+
+footer{
+	width: 100%;
+	height: 180px;
+	border-top: 1px solid #3792cb;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+#left, #right{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	color: #3792cb;
+}
+
+#copy{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	color: #3792cb;
+}
+
+.icons {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	color: #3792cb;
+}
+
+.icons a{
+	color: #3792cb;
+}
+
+   
+
+/*author page*/
+
+aside{
+	margin-left: 5%;
+	width: 50%;
+	height: 200px;
+	color: #3792cb;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+aside a{
+	text-decoration: none;
+	color: #3792cb;
+}
+a:visited{
+	color: #3792cb;
+}
+
+#author{
+	background-attachment: url();
+}
