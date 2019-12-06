@@ -99,6 +99,10 @@ header{
 	color: #3792cb;
 }
 
+.dropdown-content a:visited{
+	color: #45b6fe;
+}
+
 .show {
 	display:block;
 }
