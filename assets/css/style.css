@@ -91,6 +91,7 @@ header{
   padding: 12px 0px 16px 5px;
   text-decoration: none;
   display: block;
+	color: #45b6fe;
 }
 
 .dropdown-content a:hover {
@@ -345,10 +346,6 @@ footer{
 #about h1{
 	color: #45b6fe;
 	font-size: 3vw;
-}
-
-a{
-	color: #45b6fe;
 }
 
 a:visited{
