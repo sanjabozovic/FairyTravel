@@ -102,6 +102,11 @@ header{
 	display:block;
 }
 
+#scrl, #scrl1, #scrl2{
+	cursor: pointer;
+	color: #3792cb;
+}
+
 /*Slider*/
 
 #slider {
@@ -114,20 +119,14 @@ header{
 	box-sizing: border-box;
 }
 
-@keyframes sliderTextFade{
-	0% { bottom:0%; opacity:0.0;}
-	100%{bottom: 10%; opacity:1.0;}
-}
-
 #sliderText{
 	width:50%;
 	padding: 5vw 0vw 1vw 0.7vw;
-	overflow: hidden;
-    animation: sliderTextFade;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-fill-mode: both;
 	font-size: 2vw;
+}
+
+.hidden{
+	display: none;
 }
 
 /* Prvi tekst, podeljen u tri kolone */
@@ -202,6 +201,7 @@ header{
 #form {
 	width: 50%;
 	margin-left: 25%;
+	margin-top: 6vw;
 }
 
 #cont{
@@ -299,30 +299,6 @@ footer{
 	color: #3792cb;
 }
 
-   
-
-/*author page*/
-
-aside{
-	margin-left: 5%;
-	width: 50%;
-	height: 200px;
-	color: #3792cb;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-aside a{
-	text-decoration: none;
-	color: #3792cb;
-}
-a:visited{
-	color: #3792cb;
-}
-
-#author{
-	background-attachment: url(../../images/banner.jpg);
-}
 
 /*gallery*/
 
@@ -347,4 +323,61 @@ a:visited{
 }
 #left1:hover, #right1:hover {
 	border: 1px solid #3792cb; 
+}
+
+/*author*/
+
+#about{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	text-align: center;
+	margin-top: 5vw;
+}
+
+#about p{
+	color: #45b6fe;
+	font-size: 1.5vw;
+	margin: 1vw;
+}
+
+#about h1{
+	color: #45b6fe;
+	font-size: 3vw;
+}
+
+a:visited{
+	color: #45b6fe;
+}
+
+
+/* countries */
+
+#naslov{
+	color: #45b6fe;
+	width: 100%;
+	font-size: 3vw;
+	text-align: center;
+	margin-bottom: 6vw;
+	padding-top: 4vw;
+	border-top: 1px solid #45b6fe;
+}
+
+#countries{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #45b6fe;
+	padding-bottom: 9vw;
+}
+
+.imagedesc{
+	color: #45b6fe;
+	margin-top: 6vw;
+}
+
+.couImg{
+	border-radius: 5px;
 }

@@ -8,6 +8,7 @@
 		<meta name="author" content="Sanja Božović" />
 		<meta name="robots" content="noindex, nofollow"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="assets/css/jquery.hoverZoom.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		<link rel="shortcut icon" href="images/iconnn.ico"/>
@@ -20,7 +21,9 @@
 					<button onclick="MenuOpen()" class="dropbtn">Menu</button>
 					<div id="myDropdown" class="dropdown-content">
 						<a href="index.html">Home</a>
-						<a href="#gallery">Author</a>
+						<a id="scrl2">Countries</a>
+						<a id="scrl">Author</a>
+						<a id="scrl1">Contact</a>
 					</div>
 				</div>
 				<a href="#" class="link"> Documentation </a>
@@ -30,7 +33,7 @@
 		</header>
 
 		<section id="slider">
-			<article id="sliderText">
+			<article id="sliderText" class="hidden">
 				<h1>Fairy Travel</h1>
 				<p>Do you want to travel the world?</p>
 				<p>If the answer is yes, you've come to the right place!</p>
@@ -43,35 +46,78 @@
 
 		<div id="main">
 			<section id="firstSec" class="section hide">
-				<article class="first">
+				<article>
 					<h1>Our services</h1>
 					<p>Tired of planning your vacation? You do not have to worry about that anymore.</p>
 					<p>We can do everything for you. From choosing the hotel to preparing everything for your visa.</p>
 				</article>
-				<article class="first">
+				<article>
 					<h1>Steps</h1>
-					<p>First, you need to choose when you want to travel. After that you can choose where and for how long.</p>
+					<p>First, you need to choose when you want to travel. After that you contact us and choose where and for how long.</p>
 					<p>And finally, you have to decide if you want us to plan further or not.</p>
 				</article>
-				<article class="first">
+				<article>
 					<h1>Discounts</h1>
-					<p>We offer great discounts for students. All you have to do is select "I am a student".</p>
+					<p>We offer great discounts for students.</p>
 					<p>This is how we pay back to all of those who decide to study and make the world a better place.</p>
 				</article>
 			</section>
 			<section id="quote">
 				<p>&rdquo; The most beautiful thing in the world is, of course, the world itself.&rdquo;</p>
 			</section>
+			
+			<h1 id="naslov"> Are you ready to choose? </h1>
+			<section id="countries">
+				<ul class="thumb">
+					<li>
+					  <a href="images/venice.jpg">
+						<img src="images/venice.jpg" alt="Venice">
+					  </a>
+					</li>
+					<li>
+					  <a href="images/belgrade.jpg">
+						<img src="images/belgrade.jpg" alt="Belgrade">
+					  </a>
+					</li>
+					<li>
+					  <a href="images/amsterdam.jpg">
+						<img src="images/amsterdam.jpg" alt="Amsterdam">
+					  </a>
+					</li>
+					<li>
+						<a href="images/losangeles.jpg">
+							<img src="images/losangeles.jpg" alt="Los Angeles">
+						</a>
+					</li>
+					<li>
+						<a href="images/miami.jpg">
+							<img src="images/miami.jpg" alt="Miami">
+						</a>
+					</li>
+					<li>
+						<a href="images/budapest.jpg">
+							<img src="images/budapest.jpg" alt="Budapest">
+						</a>
+					</li>
+				</ul>
+			</section>
+
 			<div id="gallery">
 					<button id="left1" onclick="plusDivs(-1)">&#10094;</button>
-					<img src="images/author1_wide.jpg" class="slide"  alt="author photo"/>
-					<img src="images/author2_wide.jpg" class="slide" alt="author photo"/>
-					<img src="images/author3_wide.jpg" class="slide" alt="author photo"/>
+					<div id="imgs">
+						<img src="images/author1_wide.jpg"  alt="author photo"/>
+						<img src="images/author2_wide.jpg" alt="author photo"/>
+						<img src="images/author3_wide.jpg" alt="author photo"/>
+					</div>
 					<button id="right1" onclick="plusDivs(+1)">&#10095;</button>
+					<div id="about">
+
+					</div>
 			</div>
+			
 			<section id="form">
 				<form action="" method="post" name="contact" id="cont">
-					<h2 class="title">If you still have some questions, feel free to send us a message:</h2>
+					<h2 class="title">If you still have some questions, or you want to contact us, feel free to send us a message:</h2>
 					<div class="formHolder">
 						<label for="name">Name:</label>
 						<input type="text" class="txtforme delete" id="name" placeholder="Type in your name..."/>
@@ -97,7 +143,8 @@
 					</div>
 				</form>
 			</section>
-			<footer>
+		</div>
+		<footer>
 				<div id="left">
 					<h3>Do you use social media? Great! We do too.</h3>
 					<div class="icons">
@@ -107,12 +154,8 @@
 					</div>
 					<div id="copy">
 						<p>&copy; Sanja Božović</p>
-					</div>
-				</div>
-			</footer>
-		</div>
-	<script type="text/javascript" src="assets/js/main.js"></script>
-	<script src= "https://code.jquery.com/jquery-3.3.1.min.js"> </script> 
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>		
+	<script src="assets/js/jquery.hoverZoom.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script> 
 	</body>
 </html>
