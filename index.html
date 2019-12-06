@@ -20,13 +20,13 @@
 					<button onclick="MenuOpen()" class="dropbtn">Menu</button>
 					<div id="myDropdown" class="dropdown-content">
 						<a href="index.html">Home</a>
-						<a href="author.html">Author</a>
-						<a href="#">Traveling</a>
+						<a href="#gallery">Author</a>
 					</div>
 				</div>
 				<a href="#" class="link"> Documentation </a>
 				<a href="#" class="link">  Sitemap </a>
 			</div>
+			<div class="cleaner"></div>
 		</header>
 
 		<section id="slider">
@@ -36,6 +36,10 @@
 				<p>If the answer is yes, you've come to the right place!</p>
 			</article>
 		</section>
+
+		<button class="top" onclick="scrollToTop()"> 
+				<i class="fa fa-angle-double-up"></i>
+			</button>
 
 		<div id="main">
 			<section id="firstSec" class="section hide">
@@ -58,6 +62,13 @@
 			<section id="quote">
 				<p>&rdquo; The most beautiful thing in the world is, of course, the world itself.&rdquo;</p>
 			</section>
+			<div id="gallery">
+					<button id="left1" onclick="plusDivs(-1)">&#10094;</button>
+					<img src="images/author1_wide.jpg" class="slide"  alt="author photo"/>
+					<img src="images/author2_wide.jpg" class="slide" alt="author photo"/>
+					<img src="images/author3_wide.jpg" class="slide" alt="author photo"/>
+					<button id="right1" onclick="plusDivs(+1)">&#10095;</button>
+			</div>
 			<section id="form">
 				<form action="" method="post" name="contact" id="cont">
 					<h2 class="title">If you still have some questions, feel free to send us a message:</h2>
@@ -88,25 +99,20 @@
 			</section>
 			<footer>
 				<div id="left">
-					<h2>Do you use social media? Great! We do too.</h2>
+					<h3>Do you use social media? Great! We do too.</h3>
 					<div class="icons">
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-instagram"></i></a>
 						<a href="#"><i class="fa fa-twitter"></i></a>
 					</div>
-				</div>
-				<div id="copy">
-					<p>&copy; Sanja Božović</p>
-				</div>
-				<div id="right">
-					<h2>We can show you our documentation and sitemap too!</h2>
-					<div class="icons">
-						<a href="#"><i class="fa fa-file"></i></a>
-						<a href="#"><i class="fa fa-sitemap"></i></a>
+					<div id="copy">
+						<p>&copy; Sanja Božović</p>
 					</div>
 				</div>
 			</footer>
 		</div>
 	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script src= "https://code.jquery.com/jquery-3.3.1.min.js"> </script> 
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
 	</body>
 </html>

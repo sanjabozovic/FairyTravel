@@ -107,9 +107,10 @@ function accept() {
           messageOkay.innerHTML="Please fill out every box, or check if everything you wrote is valid.";
           messageOkay.style.color="#3792cb";
           messageOkay.style.fontSize="2vw";
+
         }
   }
-        document.getElementsByName("send")[0].addEventListener("click",accept);
+        document.getElementsByName("send")[0].addEventListener("click", accept);
 
         
         document.getElementsByName("delete")[0].addEventListener("click", function () { 
@@ -119,18 +120,28 @@ function accept() {
         delete1[i].classList.remove("border");
         }});
 
-        if(localStorage){
+         
+      // galerija
 
+      var slideIndex = 1;
+showDivs(slideIndex);
 
-          document.querySelector("#name").value=localStorage.getItem("name");
-          
-          document.querySelector("#surname").value=localStorage.getItem("surname");
-          
-          document.querySelector("#email").value=localStorage.getItem("email");
-          }
-          
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
       
-       
 
-
-              
+          
+         

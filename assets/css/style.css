@@ -11,6 +11,18 @@ body{
 	background-color: black;
 }
 
+/*button*/
+
+.top{
+	padding: 1vw;
+	position: fixed;
+	background-color: rgba(18, 127, 141, 0.5);
+	margin-left: 90%;
+	cursor: pointer;
+	border-radius: 5px;
+}
+  
+
 /* header */
 
 header{
@@ -26,7 +38,7 @@ header{
 
 #meni{
 	float: right;
-	margin-top: 1vw;
+	margin-top: 2vw;
 	display: flex;
 	width: 30%;
 	justify-content: space-between;
@@ -34,9 +46,8 @@ header{
 }
 
 .link{
-	background-color: #3792cb;
-	background-color: #3792cb;
-	color: black;
+	background-color: black;
+	color: #3792cb;
 	padding: 1vw;
 	font-size: 1.3vw;
 	border: none;
@@ -46,8 +57,8 @@ header{
 }
 
 .dropbtn {
-  background-color: #3792cb;
-  color: black;
+  background-color: black;
+  color: #3792cb;
   padding: 1vw;
   font-size: 1.3vw;
   border: none;
@@ -57,7 +68,7 @@ header{
 }
 
 .dropbtn:hover, .dropbtn:focus, .link:hover {
-  background-color: #45b6fe;
+  border: 1px solid #3792cb;
 }
 
 .dropdown {
@@ -68,23 +79,23 @@ header{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #45b6fe;
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  background-color: black;
 }
 
 .dropdown-content a {
-  color: black;
   padding: 12px 0px 16px 5px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: #3792cb
+	border: 1px solid #3792cb;
+	color: #3792cb;
 }
 
 .show {
@@ -253,7 +264,7 @@ header{
 
 footer{
 	width: 100%;
-	height: 180px;
+	height: 8vw;
 	border-top: 1px solid #3792cb;
 	border-radius: 5px;
 	display: flex;
@@ -313,3 +324,27 @@ a:visited{
 	background-attachment: url(../../images/banner.jpg);
 }
 
+/*gallery*/
+
+
+
+#gallery {
+    display: flex;
+	justify-content: space-around;
+	margin-top: 8vw;
+ }
+.slide {
+		  display: none; 
+}
+#left1, #right1 {
+	width: 10%;
+    background-color: black;
+	cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+	font-size: 5vw; 
+}
+#left1:hover, #right1:hover {
+	border: 1px solid #3792cb; 
+}
