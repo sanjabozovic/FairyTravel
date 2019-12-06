@@ -347,6 +347,10 @@ footer{
 	font-size: 3vw;
 }
 
+a{
+	color: #45b6fe;
+}
+
 a:visited{
 	color: #45b6fe;
 }
