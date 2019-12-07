@@ -130,11 +130,6 @@ for(var i=0; i<articl.length; i++){
 
 /*Countries */
 
-var figC = document.getElementsByTagName("figcaption");
-for(var i=0; i<figC.length; i++){
-  figC[i].className = "imagedesc";
-}
-
 var couImg = document.getElementById("countries").getElementsByTagName("img");
 for(var i=0; i<couImg.length; i++){
   couImg[i].className = "couImg";
