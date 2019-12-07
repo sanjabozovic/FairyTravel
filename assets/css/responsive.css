@@ -133,7 +133,8 @@
         font-size: 5.5vw;
     }
     #naslov{
-        font-size: 5vw;;
+        font-size: 5vw;
+        margin-bottom: 15vw;
     }
     #quote{
         height: 250px;
@@ -141,8 +142,31 @@
     #quote p{
         font-size: 3vw;
     }
+    .thumb{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;;
+    }
     #countries{
         height: 250px;
+    }
+    #gallery{
+        width: 100%;
+        height: 80vw;
+    }
+    #about{
+        width: 100%;
+    }
+    #about p{
+        font-size: 3.8vw;
+    }
+    #about h1{
+        font-size: 4.2vw;
+    }
+    #form {
+        width: 90%;
+        margin-left: 5%;
     }
     footer{
         height: 30vw;
