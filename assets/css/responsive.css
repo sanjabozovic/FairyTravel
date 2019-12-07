@@ -38,6 +38,9 @@
     footer{
         height: 20vw;   
     }
+    .accept{
+        font-size: 2vw;
+    }
 }
 
 @media screen and (max-width: 648px){
@@ -56,5 +59,17 @@
     }
     footer{
         height: 25vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #left1, #right1, #phoneHide1, #phoneHide2{
+        display: none;
+    }
+    footer{
+        height: 30vw;
+    }
+    #left{
+        width: 50%;
     }
 }
