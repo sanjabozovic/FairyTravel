@@ -88,6 +88,41 @@ var scrollF = function() {
 
 window.addEventListener("scroll", scrollF);
 
+function mediaChange(x){
+  if(x.matches){
+    scrollF = function() {
+      var y = window.scrollY;
+      if (y >= 100) {
+        firstSec.className = "section showSec"
+      } else {
+        firstSec.className = "section hideSec"
+      }
+    };
+  }
+}
+
+var x = window.matchMedia("(max-width:992px)");
+mediaChange(x)
+x.addListener(mediaChange)
+
+function mediaChange2(y){
+  if(y.matches){
+    scrollF = function() {
+      var y = window.scrollY;
+      if (y >= 25) {
+        firstSec.className = "section showSec"
+      } else {
+        firstSec.className = "section hideSec"
+      }
+    };
+  }
+}
+
+var y = window.matchMedia("(max-width:768px)");
+mediaChange(y)
+y.addListener(mediaChange)
+
+
 var articl = document.getElementById("firstSec").childNodes;
 for(var i=0; i<articl.length; i++){
  articl[i].className = "first";

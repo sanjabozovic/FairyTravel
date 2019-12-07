@@ -1,0 +1,60 @@
+@media screen and (max-width: 992px) {
+    .top{
+        display: none;
+    }
+    .dropdown-content a {
+        font-size: 1vw;}
+    
+    #logoHide{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #logo{
+        display: none;
+    }
+    #imgs img{
+        height: 400px;
+    }
+    footer{
+        height: 15vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #meni{
+        width: 60%;
+    }
+    .link, .dropbtn {
+        width: 100px;
+    }
+    .dropdown-content a{
+        font-size: 1.5vw;
+    }
+    #imgs img{
+        height: 300px;
+    }
+    footer{
+        height: 20vw;   
+    }
+}
+
+@media screen and (max-width: 648px){
+    .dropbtn, .link{
+        font-size: 1.3vw;
+    }
+    #gallery{
+        flex-wrap: wrap;
+    }
+    #about p{
+        font-size: 3vw;
+    }
+    #about{
+        border-bottom: 1px solid #3792cb;
+        padding-bottom: 2vw;
+    }
+    footer{
+        height: 25vw;
+    }
+}
