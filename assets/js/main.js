@@ -3,6 +3,16 @@ function scrollToTop() {
   $(window).scrollTop(0); 
 } 
 
+var menuLinks = ["Countries", "Author", "Contact"];
+var menuWhere = document.getElementById("myDropdown");
+      
+ for(var i=0; i<menuLinks.length; i++){
+      var MenuA = document.createElement("a");
+      MenuA.id = "scrl"+ i;
+      MenuA.innerHTML= menuLinks[i];
+      menuWhere.appendChild(MenuA);
+}
+
 $(document).ready(function() {
     $("#about").html(`
     <h1>ABOUT ME</h1>
@@ -12,19 +22,19 @@ $(document).ready(function() {
     <p>You can find out more about me <a href="https://sanjabozovic.github.io/portfolioo" target=_blank>here</a></p>
     `)
 
-    $("#scrl").click(function() {
+    $("#scrl1").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#gallery").offset().top
       }, 2000);
     });
 
-    $("#scrl1").click(function() {
+    $("#scrl2").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#form").offset().top
       }, 2000);
     });
 
-    $("#scrl2").click(function() {
+    $("#scrl0").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#naslov").offset().top
       }, 2000);
@@ -49,8 +59,6 @@ $(document).ready(function() {
       });
     }) 
 })
-
-    
 
 
 
@@ -129,6 +137,22 @@ for(var i=0; i<articl.length; i++){
 }
 
 /*Countries */
+
+var cities = ["venice", "belgrade", "amsterdam", "losangeles", "miami", "budapest"];
+var galleryUL = document.getElementById("ulGallery");
+      
+ for(var i=0; i<cities.length; i++){
+      var liTag = document.createElement("li")
+      var galleryA = document.createElement("a");
+      var galleryImg = document.createElement("img");
+      galleryA.href = `images/${cities[i]}.jpg`
+      galleryImg.src = `images/${cities[i]}.jpg`;
+      galleryImg.alt = cities[i];
+      galleryA.appendChild(galleryImg);
+      liTag.appendChild(galleryA)
+      galleryUL.appendChild(liTag);
+}
+
 
 var couImg = document.getElementById("countries").getElementsByTagName("img");
 for(var i=0; i<couImg.length; i++){
@@ -229,6 +253,19 @@ function accept() {
          
       // galerija autor
 
+
+var authorImgs = ["author1_wide", "author2_wide", "author3_wide"];
+var authorDiv = document.getElementById("imgs");
+      
+ for(var i=0; i<authorImgs.length; i++){
+      var authorImg = document.createElement("img");
+      authorImg.src = `images/${authorImgs[i]}.jpg`;
+      authorImg.alt = "author photo";
+      authorDiv.appendChild(authorImg);
+}
+
+
+      
 var gallery = document.getElementById("imgs").childNodes;
     for(var i=0; i<gallery.length; i++){
     gallery[i].className = "slide";
