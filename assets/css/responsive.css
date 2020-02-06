@@ -205,11 +205,8 @@
     #meni{
         width: 95%;
     }
-    .link, .dropbtn {
-        font-size: 4vw;
-    }
-    .dropdown-content a{
-        font-size: 4vw;
+    .link, .dropbtn, .dropdown-content a {
+        font-size: 5vw;
     }
     #slider{
         height: 600px;
