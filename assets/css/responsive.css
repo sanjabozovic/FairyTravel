@@ -218,9 +218,9 @@
         width: 90%;
     }
     #firstSec{
-    flex-direction: column;
-    align-content: center;
-    min-height: 600px;
+        flex-direction: column;
+        align-content: center;
+        min-height: 600px;
     }
     .first{
         max-width: 98%;
@@ -274,6 +274,9 @@
         width: 50%;
     }
     .accept{
-        font-size: 2.5vw;
+        font-size: 4vw;
+    }
+    #messageAccept{
+        font-size: 4vw;
     }
 }

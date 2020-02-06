@@ -207,7 +207,6 @@ function accept() {
     if(correct){
       messageOkay.innerHTML="The message was sent!";
       messageOkay.style.color="green";
-      messageOkay.style.fontSize="2vw";
       for (let i = 0; i < delete1.length; i++) {
 
       delete1[i].value = "";
@@ -229,7 +228,6 @@ function accept() {
         else{
           messageOkay.innerHTML="Please fill out every box, or check if everything you wrote is valid.";
           messageOkay.style.color="red";
-          messageOkay.style.fontSize="2vw";
 
         }
   }
