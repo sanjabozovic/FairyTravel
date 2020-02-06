@@ -1,9 +1,51 @@
 @media screen and (max-width: 992px) {
+    header{
+        height: 8vw;
+    }
+    .link, .dropbtn{
+        font-size: 1.8vw;
+    }
+    #meni{
+        width: 45%;
+    }
     .top{
         display: none;
     }
     .dropdown-content a {
-        font-size: 1vw;}
+        font-size: 1vw;
+    }
+
+    #sliderText{
+        font-size: 3vw;
+    }
+
+    #firstSec{
+        height: 300px;
+    }
+
+    .first h2{
+        font-size: 4vw;
+    }
+
+    .first p {
+        font-size: 1.8vw;
+    }
+
+    #quote{
+        height: 300px;
+    }
+
+    #about{
+        margin-top: 2vw;
+    }
+
+    #about p{
+        font-size: 1.7vw;
+    }
+
+    #about h2{
+        font-size: 3.1vw;
+    }
     
     #logoHide{
         display: block;
@@ -49,7 +91,7 @@
     .first p{
         font-size: 2vw;
     }
-    .first h1{
+    .first h2{
         font-size: 3.5vw;
     }
     #quote{
@@ -89,33 +131,88 @@
 }
 
 @media screen and (max-width: 585px){
-    .link, .dropbtn {
-        min-width: 50px;
-        font-size: 3vw;
-    }
     #left1, #right1, #imgs{
         display: none;
     }
+    .hideAuthorPhoto{
+        display: block;
+    }
+    
+    header{
+        height: 100px;
+    }
+    .link, .dropbtn, .dropdown-content a{
+        font-size: 3vw;
+    }
+    #meni{
+        width: 80%;
+    }
+
+    #slider{
+        height: 500px;
+    }
+
+    #sliderText{
+        font-size: 4vw;
+        width: 80%;
+    }
+
+    #firstSec{
+        height: 400px;
+    }
+
+    .first h2{
+        font-size: 5.5vw;
+    }
+
+    .first p {
+        font-size: 2.5vw;
+    }
+
+    #quote{
+        height: 350px;
+    }
+
+    #quote p{
+        font-size: 3.5vw;
+        height: 10vw;
+    }
+
+    #naslov{
+        font-size: 4vw;
+    }
+
+    #about{
+        margin-top: 2vw;
+    }
+
+    #about p{
+        font-size: 3vw;
+    }
+
+    #about h2{
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    footer{
+        height: 35vw;
+    }
+
 }
 
 @media screen and (max-width: 480px){
-    header{
-        height: 15vw;
-    }
     #meni{
-        width: 90%;
+        width: 95%;
     }
     .link, .dropbtn {
         font-size: 4vw;
-    }
-    .dropdown{
-        width: 30%;
     }
     .dropdown-content a{
         font-size: 4vw;
     }
     #slider{
-        height: 80vw;
+        height: 600px;
         background-position: center;
         padding-top: 15vw;
     }
@@ -124,52 +221,57 @@
         width: 90%;
     }
     #firstSec{
-    height: 80vw;
+    flex-direction: column;
+    align-content: center;
+    min-height: 600px;
+    }
+    .first{
+        max-width: 98%;
     }
     .first p{
-        font-size: 3vw;
+        font-size: 4vw;
     }
-    .first h1{
-        font-size: 5.5vw;
+    .first h2{
+        font-size: 6vw;
     }
     #naslov{
         font-size: 5vw;
         margin-bottom: 15vw;
     }
     #quote{
-        height: 250px;
+        height: 400px;
+        margin-top: 5vw;
     }
     #quote p{
-        font-size: 3vw;
+        font-size: 4vw;
+        height: 10vw;
     }
     .thumb{
         display: flex;
         align-content: center;
         justify-content: center;
-        flex-wrap: wrap;;
+        flex-wrap: wrap;
+        max-width: 100%;
     }
     #countries{
-        height: 250px;
-    }
-    #gallery{
-        width: 100%;
-        height: 80vw;
+        height: 280px;
     }
     #about{
         width: 100%;
+        height: 500px;
     }
     #about p{
-        font-size: 3.8vw;
+        font-size: 4vw;
     }
-    #about h1{
-        font-size: 4.2vw;
+    #about h2{
+        font-size: 5.5vw;
     }
     #form {
         width: 90%;
         margin-left: 5%;
     }
     footer{
-        height: 35vw;
+        height: 40vw;
     }
     #left{
         width: 50%;

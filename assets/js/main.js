@@ -14,13 +14,6 @@ var menuWhere = document.getElementById("myDropdown");
 }
 
 $(document).ready(function() {
-    $("#about").html(`
-    <h1>ABOUT ME</h1>
-    <p>Hi! My name is Sanja. Thank you for visiting this website! </p>
-    <p>I was born in Gornji Milanovac, but now I live in Belgrade.</p>
-    <p>I am also a student of ICT college in belgrade where I study internet technologies.</p>
-    <p>You can find out more about me <a href="https://sanjabozovic.github.io/portfolioo" target=_blank>here</a></p>
-    `)
 
     $("#scrl1").click(function() {
       $([document.documentElement, document.body]).animate({
@@ -60,7 +53,18 @@ $(document).ready(function() {
     }) 
 })
 
+window.onload = function(){
+  firstSec = document.getElementById("firstSec");
 
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 200){
+    $("#firstSec").animate({
+      opacity: 1
+    }, 500)
+  }
+})
+
+}
 
 
 function MenuOpen() {
@@ -83,18 +87,7 @@ window.onclick = function(event) {
 
 /*tekst podeljen u tri kolone*/
 
-firstSec = document.getElementById("firstSec");
 
-var scrollF = function() {
-  var y = window.scrollY;
-  if (y >= 300) {
-    firstSec.className = "section showSec"
-  } else {
-    firstSec.className = "section hideSec"
-  }
-};
-
-window.addEventListener("scroll", scrollF);
 
 function mediaChange(x){
   if(x.matches){
@@ -139,6 +132,7 @@ for(var i=0; i<articl.length; i++){
 /*Countries */
 
 var cities = ["venice", "belgrade", "amsterdam", "losangeles", "miami", "budapest"];
+var citiesWrite = ["Venice", "Belgrade", "Amsterdam", "Los Angeles", "Miami", "Budapest"];
 var galleryUL = document.getElementById("ulGallery");
       
  for(var i=0; i<cities.length; i++){
@@ -147,7 +141,7 @@ var galleryUL = document.getElementById("ulGallery");
       var galleryImg = document.createElement("img");
       galleryA.href = `images/${cities[i]}.jpg`
       galleryImg.src = `images/${cities[i]}.jpg`;
-      galleryImg.alt = cities[i];
+      galleryImg.alt = citiesWrite[i];
       galleryA.appendChild(galleryImg);
       liTag.appendChild(galleryA)
       galleryUL.appendChild(liTag);
