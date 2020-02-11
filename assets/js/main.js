@@ -89,39 +89,7 @@ window.onclick = function(event) {
 
 
 
-function mediaChange(x){
-  if(x.matches){
-    scrollF = function() {
-      var y = window.scrollY;
-      if (y >= 100) {
-        firstSec.className = "section showSec"
-      } else {
-        firstSec.className = "section hideSec"
-      }
-    };
-  }
-}
 
-var x = window.matchMedia("(max-width:992px)");
-mediaChange(x)
-x.addListener(mediaChange)
-
-function mediaChange2(y){
-  if(y.matches){
-    scrollF = function() {
-      var y = window.scrollY;
-      if (y >= 25) {
-        firstSec.className = "section showSec"
-      } else {
-        firstSec.className = "section hideSec"
-      }
-    };
-  }
-}
-
-var y = window.matchMedia("(max-width:768px)");
-mediaChange(y)
-y.addListener(mediaChange)
 
 
 var articl = document.getElementById("firstSec").childNodes;
@@ -139,7 +107,7 @@ var galleryUL = document.getElementById("ulGallery");
       var liTag = document.createElement("li")
       var galleryA = document.createElement("a");
       var galleryImg = document.createElement("img");
-      galleryA.href = `images/${cities[i]}.jpg`
+      galleryA.href = `images/${cities[i]}.jpg`;
       galleryImg.src = `images/${cities[i]}.jpg`;
       galleryImg.alt = citiesWrite[i];
       galleryA.appendChild(galleryImg);
@@ -152,6 +120,8 @@ var couImg = document.getElementById("countries").getElementsByTagName("img");
 for(var i=0; i<couImg.length; i++){
   couImg[i].className = "couImg";
 }
+
+
 
   /*forma */
 

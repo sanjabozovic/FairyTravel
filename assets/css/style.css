@@ -369,7 +369,7 @@ a:visited{
 	color: #45b6fe;
 }
 
-.hideAuthorPhoto{
+.hideAuthorPhoto, .hidePtag{
 	display: none;
 }
 
@@ -398,3 +398,4 @@ a:visited{
 .couImg{
 	border-radius: 5px;
 }
+

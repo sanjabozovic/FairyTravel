@@ -232,8 +232,7 @@
         font-size: 6vw;
     }
     #naslov{
-        font-size: 5vw;
-        margin-bottom: 15vw;
+        display: none;
     }
     #quote{
         height: 400px;
@@ -251,7 +250,7 @@
         max-width: 100%;
     }
     #countries{
-        height: 280px;
+        display: none;
     }
     #about{
         width: 100%;
@@ -278,5 +277,12 @@
     }
     #messageAccept{
         font-size: 4vw;
+    }
+    
+    .hideAuthorPhoto{
+        display: none;
+    }
+    .hidePtag{
+        display: block;
     }
 }
