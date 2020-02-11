@@ -204,9 +204,14 @@
 @media screen and (max-width: 480px){
     #meni{
         width: 95%;
+        display: flex;
+        flex-wrap: wrap;
     }
     .link, .dropbtn, .dropdown-content a {
         font-size: 5vw;
+    }
+    #scrl0 {
+        display: none;
     }
     #slider{
         height: 600px;
